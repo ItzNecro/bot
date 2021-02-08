@@ -70,6 +70,19 @@ client.on('message', message => {
  
 });
 
+
+
+client.on("ready", () =>{
+    console.log(`Logged in as ${client.user.tag}!`);
+    client.user.setPresence({
+        status: "idle",  //You can show online, idle....
+        game: {
+            name: "Your Message! :v",  //The message shown
+            type: "WATCHING" //PLAYING: WATCHING: LISTENING: STREAMING:
+        }
+    });
+ });
+
     
   
 // THIS  MUST  BE  THIS  WAY
