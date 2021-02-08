@@ -77,8 +77,8 @@ client.on("ready", () =>{
     client.user.setPresence({
         status: "idle",  //You can show online, idle....
         game: {
-            name: "Your Message! :v",  //The message shown
-            type: "WATCHING" //PLAYING: WATCHING: LISTENING: STREAMING:
+            name: "Hacked Client",  //The message shown
+            type: "PLAYING" //PLAYING: WATCHING: LISTENING: STREAMING:
         }
     });
  });
