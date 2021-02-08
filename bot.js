@@ -62,9 +62,9 @@ client.on('message', message => {
 
 client.on('message', message => {
 
-    if (message.content === '!server') {
+    if (message.content === 'Dyno bau') {
 
-       message.channel.send('Server name: ${message.guild.name}\nTotal Members: ${message.guild.memberCount}');
+       message.channel.send('Emang');
 
        }
  
