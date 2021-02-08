@@ -28,7 +28,7 @@ client.on('message', message => {
 
     if (message.content === ':v') {
 
-       message.reply('Gak jelas anjir');
+       ('Gak jelas anjir');message.reply
 
        }
  
