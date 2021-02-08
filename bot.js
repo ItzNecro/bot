@@ -28,12 +28,36 @@ client.on('message', message => {
 
     if (message.content === ':v') {
 
-       ('Gak jelas anjir');message.reply
+       message.reply('Gk Jelas anjir :v');
 
        }
  
 });
  
+
+
+client.on('message', message => {
+
+    if (message.content === 'P') {
+
+       message.reply('Salam yang bener ngab! :v');
+
+       }
+ 
+});
+
+
+
+client.on('message', message => {
+
+    if (message.content === 'Hi') {
+
+       message.reply('Halo gan');
+
+       }
+ 
+});
+
 
 
 // THIS  MUST  BE  THIS  WAY
