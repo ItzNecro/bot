@@ -64,7 +64,7 @@ client.on('message', message => {
 
     if (message.content === '!server') {
 
-       message.channel.send('Halo gan');
+       message.channel.send('Server name: ${message.guild.name}\nTotal Members: ${message.guild.memberCount}');
 
        }
  
