@@ -60,6 +60,17 @@ client.on('message', message => {
 
 
 
+else if (message.content === `${prefix}server`) {
+    message.channel.send(`Server name: ${message.guild.name}\nTotal members: ${message.guild.memberCount}`)
+}
+
+ 
+else if (message.content === `${prefix}user-info`) {
+	   message.channel.send(`Your username: ${message.author.username}\nYour ID: ${message.author.id}`);
+}
+  
+  
+  
 // THIS  MUST  BE  THIS  WAY
 
 client.login(process.env.BOT_TOKEN);//BOT_TOKEN is the Client Secret
