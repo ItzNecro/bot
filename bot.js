@@ -83,6 +83,10 @@ client.on("ready", () =>{
     });
  });
 
+
+
+client.user.setActivity("I hate u XD");
+
     
   
 // THIS  MUST  BE  THIS  WAY
