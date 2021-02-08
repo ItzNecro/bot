@@ -52,7 +52,7 @@ client.on('message', message => {
 
     if (message.content === 'Hi') {
 
-       message.reply('Halo gan');
+       message.channel.send('Halo gan');
 
        }
  
