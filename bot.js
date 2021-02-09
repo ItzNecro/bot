@@ -26,9 +26,9 @@ client.on('message', message => {
 
 client.on('message', message => {
 
-    if (message.content === ':v') {
+    if (message.content === 'hi') {
 
-       message.reply('Gk Jelas anjir :v');
+       message.reply('Halo gan');
 
        }
  
