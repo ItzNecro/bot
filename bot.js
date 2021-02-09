@@ -6,6 +6,7 @@ const {
 	prefix,
 } = require('Config.json');
 
+const ytdl = require('ytdl-core');
  
 
 client.on('ready', () => {
