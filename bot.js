@@ -83,12 +83,6 @@ client.on("ready", () =>{
     });
  });
 
-
-
-client.on("ready", () =>{
-    bot.user.setActivity(`this won't appear in the bot's custom status!`, {type: 4})
-
-
     
   
 // THIS  MUST  BE  THIS  WAY
