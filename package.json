@@ -7,8 +7,6 @@
   "version": "0.0.0",
 
   "main": "bot.js",
-  
-  "prefix": "!",
 
   "scripts": {
 
@@ -23,3 +21,5 @@
     "request": "2.81.0"
 
   }
+
+  "prefix": "!",
