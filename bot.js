@@ -2,6 +2,11 @@ const Discord = require('discord.js');
 
 const client = new Discord.Client();
 
+const prefix = require('discord-prefix');
+
+//if the server doesn't have a set prefix yet
+let defaultPrefix = '!';
+
  
 
 client.on('ready', () => {
