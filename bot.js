@@ -2,14 +2,9 @@ const Discord = require('discord.js');
 
 const client = new Discord.Client();
 
-const prefix = require('discord-prefix');
-
-//Specify no server to change the default prefix.
-prefix.setPrefix('!');
-
-//Specify no server to get the default prefix.
-console.log(prefix.getPrefix());
-// -> !
+const {
+	prefix,
+} = require('./config.json');
 
  
 
