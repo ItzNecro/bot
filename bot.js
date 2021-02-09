@@ -4,8 +4,12 @@ const client = new Discord.Client();
 
 const prefix = require('discord-prefix');
 
-//if the server doesn't have a set prefix yet
-let defaultPrefix = '!';
+//Specify no server to change the default prefix.
+prefix.setPrefix('!');
+
+//Specify no server to get the default prefix.
+console.log(prefix.getPrefix());
+// -> !
 
  
 
