@@ -4,7 +4,7 @@ const client = new Discord.Client();
 
 const {
 	prefix,
-} = require('config.json');
+} = require('./config.json');
 
 const ytdl = require('ytdl-core');
  
