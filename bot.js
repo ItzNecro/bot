@@ -146,18 +146,10 @@ client.on("ready", () =>{
 
 
 client.on('message', message => {
-  if (message.content === 'ping') {  
-    message.channel.send(`🏓Latency is ${Date.now() - message.createdTimestamp}ms. API Latency is ${Math.round(client.ws.ping)}ms`);
-  }
-});
-
-
-
-client.on('message', message => {
-  if (message.content === '!ping') {
+  if (message.content === 'ping') {
   message.channel.send('Loading data').then (async (msg) =>{
     msg.delete()
-    message.channel.send(`🏓Latency is ${msg.createdTimestamp - message.createdTimestamp}ms. API Latency is ${Math.round(client.ws.ping)}ms`);
+    message.channel.send(`🏓 Latency is ${msg.createdTimestamp - message.createdTimestamp}ms. API Latency is ${Math.round(client.ws.ping)}ms`);
   })
   }
 });
