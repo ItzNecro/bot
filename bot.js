@@ -72,6 +72,18 @@ client.on('message', message => {
 
 
 
+client.on('message', message => {
+
+    if (message.content === 'tes') {
+
+       message.channel.send('APA TES TES');
+
+       }
+ 
+});
+
+
+
 client.on("ready", () =>{
     console.log(`Logged in as ${client.user.tag}!`);
     client.user.setPresence({
