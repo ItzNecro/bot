@@ -153,6 +153,17 @@ client.on('message', message => {
 
 
 
+client.on('message', message => {
+  if (message.content === '!ping') {
+  message.channel.send('Loading data').then (async (msg) =>{
+    msg.delete()
+    message.channel.send(`🏓Latency is ${msg.createdTimestamp - message.createdTimestamp}ms. API Latency is ${Math.round(client.ws.ping)}ms`);
+  })
+  }
+});
+
+
+
 // THIS  MUST  BE  THIS  WAY
 
 client.login(process.env.BOT_TOKEN);//BOT_TOKEN is the Client Secret
