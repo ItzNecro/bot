@@ -145,6 +145,14 @@ client.on("ready", () =>{
 
 
 
+client.on('message', message => {
+  if (message.content === 'ping') {  
+    message.channel.send(`🏓Latency is ${Date.now() - message.createdTimestamp}ms. API Latency is ${Math.round(client.ws.ping)}ms`);
+  }
+});
+
+
+
 // THIS  MUST  BE  THIS  WAY
 
 client.login(process.env.BOT_TOKEN);//BOT_TOKEN is the Client Secret
