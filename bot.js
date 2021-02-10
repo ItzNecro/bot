@@ -149,7 +149,7 @@ client.on('message', message => {
   if (message.content === 'ping') {
   message.channel.send('Loading data').then (async (msg) =>{
     msg.delete()
-    message.channel.send(`🏓Latency is ${Date.now() - message.createdTimestamp}ms.
+    message.channel.send(`🏓Latency is ${Date.now() - message.createdTimestamp}ms. API Latency is ${Math.round(client.ws.ping)}ms`);
   })
   }
 });
