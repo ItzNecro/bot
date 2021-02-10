@@ -112,7 +112,7 @@ client.on('message', message => {
 
     if (message.content === 'p') {
 
-       message.channel.send('Salam yang bener ngab');
+       message.channel.send('Salam yang bener ngab! :v');
 
        }
  
