@@ -120,6 +120,18 @@ client.on('message', message => {
 
 
 
+client.on('message', message => {
+
+    if (message.content === 'IKAN HIU MAKAN TOMAT') {
+
+       message.channel.send('GOBLOG!!!! :v');
+
+       }
+ 
+});
+
+
+
 client.on("ready", () =>{
     console.log(`Logged in as ${client.user.tag}!`);
     client.user.setPresence({
