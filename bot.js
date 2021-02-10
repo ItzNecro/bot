@@ -26,6 +26,18 @@ client.on('message', message => {
 
 client.on('message', message => {
 
+    if (message.content === 'hai guys') {
+
+       message.channel.send('lu yang gay dyno');
+
+       }
+ 
+});
+
+
+
+client.on('message', message => {
+
     if (message.content === 'hi') {
 
        message.reply('Halo gan');
