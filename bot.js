@@ -40,7 +40,7 @@ client.on('message', message => {
 
     if (message.content === 'hi') {
 
-       message.reply('Halo gan');
+       message.reply('hai juga :D');
 
        }
  
