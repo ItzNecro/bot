@@ -52,19 +52,7 @@ client.on('message', message => {
 
     if (message.content === 'P') {
 
-       message.reply('Salam yang bener ngab! :v');
-
-       }
- 
-});
-
-
-
-client.on('message', message => {
-
-    if (message.content === 'Hi') {
-
-       message.channel.send('Halo gan');
+       message.reply('yang sopan :v');
 
        }
  
@@ -88,19 +76,7 @@ client.on('message', message => {
 
     if (message.content === 'tes') {
 
-       message.channel.send('APA TES TES');
-
-       }
- 
-});
-
-
-
-client.on('message', message => {
-
-    if (message.content === 'Tes') {
-
-       message.channel.send('APA TES TES');
+       message.channel.send('ngelag? :v');
 
        }
  
