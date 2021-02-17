@@ -123,7 +123,7 @@ client.on("ready", () =>{
 
 client.on("ready", () =>{
     console.log(`Logged in as ${client.user.tag}!`);
-    client.user.setActivity('Prefix is: .', { type: "WATCHING" }).catch(console.error) 
+    bot.user.setActivity('Prefix is: .', { type: "WATCHING" }).catch(console.error) 
 })
 
 
