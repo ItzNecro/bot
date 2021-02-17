@@ -1,3 +1,4 @@
+const client = new Discord.Client();
 const db = require("quick.db")
 const discord = require("discord.js")
 
