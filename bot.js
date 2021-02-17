@@ -114,7 +114,7 @@ client.on("ready", () =>{
         status: "idle",  //You can show online, idle....
         game: {
             name: "Hacked Client",  //The message shown
-            status: "PLAYING" //PLAYING: WATCHING: LISTENING: STREAMING:
+            type: "PLAYING" //PLAYING: WATCHING: LISTENING: STREAMING:
         }
     });
  });
