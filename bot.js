@@ -133,6 +133,7 @@ client.on('message', message => {
 
 
 Client.on('ready', async () => {
+   console.log(`Logged in as ${client.user.tag}!`);
    await client.user.setPresence({ game: { name: 'Hacked Client' }, status: 'idle' });
 });
 
