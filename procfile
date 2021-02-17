@@ -1,1 +1,1 @@
-worker : status.js
+worker: node status.js
