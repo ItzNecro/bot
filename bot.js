@@ -121,6 +121,13 @@ client.on("ready", () =>{
 
 
 
+client.on("ready", () =>{
+    console.log(`Logged in as ${client.user.tag}!`);
+    client.user.setActivity('Prefix is: .', { type: "WATCHING" }).catch(console.error) 
+})
+
+
+
 client.on('message', message => {
   if (message.content === 'ping') {
   message.channel.send('Loading data').then (async (msg) =>{
