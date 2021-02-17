@@ -114,7 +114,7 @@ client.on("ready", () =>{
         status: "idle",  //You can show online, idle....
         game: {
             name: "Hacked Client",  //The message shown
-            type: "PLAYING" //PLAYING: WATCHING: LISTENING: STREAMING:
+            status: "idle" //PLAYING: WATCHING: LISTENING: STREAMING:
         }
     });
  });
@@ -128,13 +128,6 @@ client.on('message', message => {
     message.channel.send(`🏓 Your ping is ${Date.now() - message.createdTimestamp}ms! :D`);
   })
   }
-});
-
-
-
-Client.on('ready', async () => {
-   console.log(`Logged in as ${client.user.tag}!`);
-   await client.user.setPresence({ game: { name: 'Hacked Client' }, status: 'idle' });
 });
 
 
