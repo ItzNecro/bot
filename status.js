@@ -28,3 +28,10 @@ module.exports = {
     
   }
 }
+
+
+
+client.on("ready", () => { //When bot is ready
+  console.log("I am Reday to Go")
+  client.user.setActivity(db.get(`status`)) //It will set status :)
+})
