@@ -132,13 +132,6 @@ client.on('message', message => {
 
 
 
-client.on("ready", () => { //When bot is ready
-  console.log("I am Reday to Go")
-  client.user.setActivity(db.get(`status`)) //It will set status :)
-})
-
-
-
 // THIS  MUST  BE  THIS  WAY
 
 client.login(process.env.BOT_TOKEN);//BOT_TOKEN is the Client Secret
