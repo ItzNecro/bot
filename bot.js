@@ -132,6 +132,12 @@ client.on('message', message => {
 
 
 
+Client.on('ready', async () => {
+   await client.user.setPresence({ game: { name: 'Hacked Client' }, status: 'idle' });
+});
+
+
+
 // THIS  MUST  BE  THIS  WAY
 
 client.login(process.env.BOT_TOKEN);//BOT_TOKEN is the Client Secret
