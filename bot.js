@@ -114,7 +114,7 @@ client.on("ready", () =>{
         status: "idle",  //You can show online, idle....
         game: {
             name: "Hacked Client",  //The message shown
-            status: "idle" //PLAYING: WATCHING: LISTENING: STREAMING:
+            status: "PLAYING" //PLAYING: WATCHING: LISTENING: STREAMING:
         }
     });
  });
@@ -123,7 +123,7 @@ client.on("ready", () =>{
 
 client.on("ready", () =>{
     console.log(`Logged in as ${client.user.tag}!`);
-    bot.user.setActivity('Prefix is: .', { type: "WATCHING" }).catch(console.error) 
+    client.user.setActivity('Prefix is: .', { type: "WATCHING" }).catch(console.error) 
 })
 
 
