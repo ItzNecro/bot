@@ -108,6 +108,18 @@ client.on('message', message => {
 
 
 
+client.on('message', message => {
+
+    if (message.content === 'KO BILANG AKU KONPIG') {
+
+       message.channel.send('YA KAN EMG AKU KONPIG HAAAYYYUUKK NII BUDII NII BUDII');
+
+       }
+ 
+});
+
+
+
 client.on("ready", () =>{
     console.log(`Logged in as ${client.user.tag}!`);
     client.user.setPresence({
