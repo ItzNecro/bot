@@ -28,7 +28,7 @@ client.on('message', message => {
 
     if (message.content === 'cih') {
 
-       message.reply('APA KAU CAH CIH CAH CIH!!!!);
+       message.reply('APA KAU CAH CIH CAH CIH!!!!');
 
        }
 
