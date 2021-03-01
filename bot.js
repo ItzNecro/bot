@@ -76,7 +76,7 @@ client.on('message', message => {
 
     if (message.content === 'Dyno bau') {
 
-       message.channel.send('Emang');
+       message.channel.send('Emang :v');
 
        }
  
