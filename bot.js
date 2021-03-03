@@ -10,18 +10,6 @@ client.on('ready', () => {
 
 });
 
- 
-
-client.on('message', message => {
-
-    if (message.content === 'ping') {
-
-       message.reply('**pong**');
-
-       }
-
-});
-
 
 
 client.on('message', message => {
@@ -158,7 +146,7 @@ client.on("ready", () =>{
 
 
 client.on('message', message => {
-  if (message.content === 'ping') {
+  if (message.content.startsWith(prefix + "ping")) {
   message.channel.send('Loading data').then (async (msg) =>{
     msg.delete()
     message.channel.send(`🏓 Your ping is ${Date.now() - message.createdTimestamp}ms! :D`);
@@ -175,7 +163,7 @@ client.on("message", (message) => {
   if (!message.content.startsWith(prefix)) return;
  
   if (message.content.startsWith(prefix + "ping")) {
-    message.channel.send("pong!");
+    message.channel.send("**pong!**");
   } else
   if (message.content.startsWith(prefix + "foo")) {
     message.channel.send("bar!");
