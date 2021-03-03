@@ -157,7 +157,7 @@ client.on('message', message => {
 
 
 // Set the prefix
-const prefix = "g!";
+const prefix = "?";
 client.on("message", (message) => {
   // Exit and stop if it's not there
   if (!message.content.startsWith(prefix)) return;
@@ -165,8 +165,8 @@ client.on("message", (message) => {
   if (message.content.startsWith(prefix + "ping")) {
     message.channel.send("**pong!**");
   } else
-  if (message.content.startsWith(prefix + "gabut")) {
-    message.channel.send(":v");
+  if (message.content.startsWith(prefix + "help")) {
+    message.channel.send("Sori coming soon niiiikk");
   }
 });
 
