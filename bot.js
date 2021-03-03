@@ -157,19 +157,28 @@ client.on("ready", () =>{
 
 
 
-client.on("ready", () =>{
-    console.log(`Logged in as ${client.user.tag}!`);
-    client.user.setPresence('Prefix is: .', { type: "WATCHING" }).catch(console.error) 
-})
-
-
-
 client.on('message', message => {
   if (message.content === 'ping') {
   message.channel.send('Loading data').then (async (msg) =>{
     msg.delete()
     message.channel.send(`🏓 Your ping is ${Date.now() - message.createdTimestamp}ms! :D`);
   })
+  }
+});
+
+
+
+// Set the prefix
+const prefix = "!";
+client.on("message", (message) => {
+  // Exit and stop if it's not there
+  if (!message.content.startsWith(prefix)) return;
+ 
+  if (message.content.startsWith(prefix + "ping")) {
+    message.channel.send("pong!");
+  } else
+  if (message.content.startsWith(prefix + "foo")) {
+    message.channel.send("bar!");
   }
 });
 
