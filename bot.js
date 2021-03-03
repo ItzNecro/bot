@@ -26,6 +26,18 @@ client.on('message', message => {
 
 client.on('message', message => {
 
+    if (message.content === 'Hmm') {
+
+       message.reply('Mikir apa bang?');
+
+       }
+
+});
+
+
+
+client.on('message', message => {
+
     if (message.content === 'cih') {
 
        message.reply('APA KAU CAH CIH CAH CIH!!!!');
