@@ -2,10 +2,6 @@ const Discord = require('discord.js');
 
 const client = new Discord.Client();
 
-const args = message.content.slice(prefix.length).split(/ +/);
-
-const command = args.shift().toLowerCase();
-
 
 
 client.on('ready', () => {
