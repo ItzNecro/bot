@@ -194,9 +194,7 @@ client.on("message", (message) => {
       text: "© Example"
     }
   }
-});");
-  }
-});
+");
 
 
 
