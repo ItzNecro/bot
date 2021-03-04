@@ -166,7 +166,7 @@ client.on("message", (message) => {
     message.channel.send("**pong!**");
   } else
   if (message.content.startsWith(prefix + "help")) {
-    client.commands.get('command').execute(message, args, Discord);
+    message.channel.send('Hmm');
   }
  
 });
