@@ -166,7 +166,7 @@ client.on("message", (message) => {
     message.channel.send("**pong!**");
   } else
   if (message.content.startsWith(prefix + "help")) {
-    message.channel.send("{embed: {
+    message.channel.send({embed: {
     color: 3447003,
     author: {
       name: client.user.username,
@@ -194,7 +194,7 @@ client.on("message", (message) => {
       text: "© Example"
     }
   }
-");
+});
 
 
 
