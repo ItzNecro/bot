@@ -2,7 +2,9 @@ const Discord = require('discord.js');
 
 const client = new Discord.Client();
 
-const embed = new Discord.RichEmbed()
+const args = message.content.slice(prefix.length).split(/ +/);
+
+const command = args.shift().toLowerCase();
 
 
 
@@ -168,7 +170,7 @@ client.on("message", (message) => {
     message.channel.send("**pong!**");
   } else
   if (message.content.startsWith(prefix + "help")) {
-    message.channel.send('Hmm');
+    client.commands.get('command').execute(message, args, Discord);
   }
  
 });
