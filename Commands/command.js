@@ -10,7 +10,7 @@ module.exports = {
         .addFields(
             {name: '$help' value: 'Show the guide for this bot!'}
         ) 
-        .addImage('https://cdn.discordapp.com/attachments/811602297414484008/811929748023935026/AF827D43-EB4A-4A57-A12A-63CF49F83D7D.png')
+        .setImage('https://cdn.discordapp.com/attachments/811602297414484008/811929748023935026/AF827D43-EB4A-4A57-A12A-63CF49F83D7D.png')
         .setFooter('Hmm');  
 
         message.channel.send(newEmbed);
