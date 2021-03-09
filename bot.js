@@ -149,7 +149,7 @@ client.on('message', message => {
   if (message.content.startsWith(prefix + "ping")) {
   message.channel.send('Loading data').then (async (msg) =>{
     msg.delete()
-    message.channel.send(`🏓 | **Pong!** - Time taken: ${Date.now() - message.createdTimestamp}ms!`);
+    message.channel.send(`🏓 **|** **Pong!** - Time taken: ${Date.now() - message.createdTimestamp}ms!`);
   })
   }
 });
