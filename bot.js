@@ -2,13 +2,6 @@ const Discord = require('discord.js');
 
 const client = new Discord.Client();
 
-const { MessageEmbed } = require("discord.js")
-
-const embed = new MessageEmbed()
-.addField("Test")
-.setTimestamp()
-message.channel.send(embed)
-
 
 
 client.on('ready', () => {
@@ -173,7 +166,7 @@ client.on("message", (message) => {
     message.channel.send("Hmm");
   } else
   if (message.content.startsWith(prefix + "help")) {
-    message.channel.send(MessageEmbeds);
+    message.channel.send("hmm");
   }
  
 });
