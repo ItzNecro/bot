@@ -149,7 +149,7 @@ client.on('message', message => {
   if (message.content.startsWith(prefix + "ping")) {
   message.channel.send('Loading data').then (async (msg) =>{
     msg.delete()
-    message.channel.send(`🏓 Your ping is ${Date.now() - message.createdTimestamp}ms! :D`);
+    message.channel.send(`🏓 | **Pong!** - Time taken: ${Date.now() - message.createdTimestamp}ms!`);
   })
   }
 });
@@ -162,8 +162,8 @@ client.on("message", (message) => {
   // Exit and stop if it's not there
   if (!message.content.startsWith(prefix)) return;
  
-  if (message.content.startsWith(prefix + "ping")) {
-    message.channel.send("**pong!**");
+  if (message.content.startsWith(prefix + "Gabut")) {
+    message.channel.send("Hmm");
   } else
   if (message.content.startsWith(prefix + "help")) {
     message.channel.send('Hmm');
