@@ -166,7 +166,7 @@ client.on("message", (message) => {
     message.channel.send("Hmm");
   } else
   if (message.content.startsWith(prefix + "help")) {
-    message.channel.send(newEmbeds);
+    message.channel.send(MessageEmbeds);
   }
  
 });
