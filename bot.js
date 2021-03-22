@@ -144,18 +144,6 @@ client.on('message', message => {
 
 
 
-client.on('message', message => {
-
-    if (message.content === 'lad') {
-
-       message.channel.send('wew');
-
-       }
- 
-});
-
-
-
 client.on("ready", () =>{
     console.log(`Logged in as ${client.user.tag}!`);
     client.user.setPresence({
