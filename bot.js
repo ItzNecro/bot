@@ -132,6 +132,30 @@ client.on('message', message => {
 
 
 
+client.on('message', message => {
+
+    if (message.content === 'wew') {
+
+       message.channel.send('lad');
+
+       }
+ 
+});
+
+
+
+client.on('message', message => {
+
+    if (message.content === 'lad') {
+
+       message.channel.send('wew');
+
+       }
+ 
+});
+
+
+
 client.on("ready", () =>{
     console.log(`Logged in as ${client.user.tag}!`);
     client.user.setPresence({
@@ -162,8 +186,8 @@ client.on("message", (message) => {
   // Exit and stop if it's not there
   if (!message.content.startsWith(prefix)) return;
  
-  if (message.content.startsWith(prefix + "Gabut")) {
-    message.channel.send("Hmm");
+  if (message.content.startsWith(prefix + "spam")) {
+    message.channel.send("wew");
   } else
   if (message.content.startsWith(prefix + "help")) {
     message.channel.send("hmm");
